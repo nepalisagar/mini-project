@@ -1,4 +1,14 @@
-# React + Vite
+# React Counter App
+
+A simple counter application built with [React](https://react.dev/) and [Vite](https://vitejs.dev/).
+
+## Features
+
+- Increment and decrement a counter
+- Fast development with Vite's HMR (Hot Module Replacement)
+- Minimal setup, easy to extend
+
+## Project Structure
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

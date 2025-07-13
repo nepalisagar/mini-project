@@ -4,15 +4,22 @@ function App() {
 
   let [count, setCount] = useState(0)
 
-  const countClick = () => {
+  const countIncrease = () => {
     setCount( count + 1 )
+  }
+  const countDecrease = () => {
+    setCount( count - 1 )
   }
 
   return (
     <div>
     <h1>Z Coder</h1>
-    <button onClick={countClick}>Count {count}</button>
-    <span><i>*reload the page to start count from 0.</i></span>
+    <span>{ count }</span>
+    <div className="alignBtn">
+    <button onClick={countIncrease}>Increase</button>
+    <button onClick={countDecrease}>Decrease</button>
+    </div>
+
     </div>
   )
 }

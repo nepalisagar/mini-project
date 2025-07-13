@@ -17,8 +17,8 @@ html{
 div{
     width: 21vw;
     height: 42vh;
-    /* border: 2px solid white;
-    border-radius: 40px; */
+    border: 2px solid white;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -38,11 +38,17 @@ h1:hover{
     text-shadow: 1px 1px 11px #000;
 }
 
+.alignBtn{
+    height: 0vh;
+    display: flex;
+    flex-direction: row;
+}
+
 button{
     padding: 8px 20px 5px 20px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     border: 2px solid #028d95;
-    border-radius: 30px;
+    border-radius: 50px;
     cursor: pointer;
     font-family: "Newsreader", serif;
 }
@@ -52,7 +58,7 @@ button:active{
 }
 
 span{
-    color: #393E46;
-    text-decoration: underline;
+    color: #25282d;
+    font-size: 2em;
     font-family: "Newsreader", serif;
 }
