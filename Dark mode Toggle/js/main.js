@@ -1,26 +1,32 @@
+const body = document.querySelector("body");
+const background = document.querySelector(".box");
+const button = document.querySelector(".boxBtn");
+const heading = document.querySelector("h1");
+const sub_heading = document.querySelector("h4");
 
-const body = document.querySelector('body');
-const mode = document.querySelector('img');
-const text = document.querySelector('p');
+let mode = "dark";
 
-let default_Background = "white";
+button.addEventListener('click', () => {
 
-mode.addEventListener('click', ()=>{
-    if ( default_Background == "white"){
-        body.style.backgroundColor = "white";
-        mode.src = "img/moon.png";
-        text.innerText = "Light Mode";
-        body.style.color = "black";
-        default_Background = "black";
+    if (mode == "dark") {
+        button.style.left = "0px";
+        button.style.backgroundColor = "black";
+        background.style.backgroundColor = "white";
+        body.style.backgroundColor = "#222222";
+        heading.style.color = "white";
+        sub_heading.style.color = "white";
+
+        mode = "light";
     }
-    else if (default_Background == "black"){
-        body.style.backgroundColor = "black";
-        mode.src = "img/light.png";
-        text.innerText = "Dark Mode";
-        body.style.color = "white";
-        default_Background = "white";
+    else if (mode == "light") {
+        button.style.left = "109px";
+        button.style.backgroundColor = "grey";
+        background.style.backgroundColor = "white";
+        body.style.backgroundColor = "grey";
+        heading.style.color = "black";
+        sub_heading.style.color = "black";
+
+        mode = "dark";
     }
+
 })
-
-
-
