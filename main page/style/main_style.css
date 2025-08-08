@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+header{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-family: "New Rocker", system-ui;
+    background-color: #222831;
+    color: #00ADB5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 90px;
+    height: 50%;
+    background-color: #EEEEEE;
+    color: #393E46;
+}
+
+li::marker{
+    font-size: 3em;
+    color: black;
+    font-family: "Germania One", system-ui;
+}
+
+main li a{
+    font-size: 4em;
+    color: black;
+    text-decoration: none;
+    font-family: "Germania One", system-ui;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    header h1{
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1215px) {
+    header h1{
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 979px) {
+    header h1{
+        font-size: 1.2em;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+    header h1{
+        font-size: 1.2em;
+        padding: 20px;
+    }
+}
+
+
+@media (min-width: 100px) and (max-width: 399px) {
+    header h1{
+        font-size: 0.8em;
+        padding: 20px;
+    }
+
+    main li a{
+        font-size: 3em;
+    }
+}
