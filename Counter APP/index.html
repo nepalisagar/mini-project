@@ -1,15 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Counter App</h1>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Box -->
+        <div class="box"> 
+            <!-- Value Display -->
+            <section class="valueDisplay">
+                <p id="numValue">0</p>
+            </section>
+            <!-- Value Display End -->
+
+            <!-- Button -->
+            <section class="buttonStyle">
+                <button class="increase"><img src="img/arrow.svg" alt=""></button>
+                <button class="decrease"><img src="img/arrow.svg" alt=""></button>
+            </section>
+            <!-- Button End -->
+        </div>
+        <!-- Box End -->
+    </main>
+    <!-- Main Content End -->
+    <script src="js/main.js"></script>
+</body>
 </html>
