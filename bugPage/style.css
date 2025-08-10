@@ -53,3 +53,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+main h1{
+    font-size: 7em;
+    text-align: center;
+}
